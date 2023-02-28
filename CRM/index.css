@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0 ;
+}
+
+
+/* Contenedor de username y password */
+.form-container{
+    background-color: white;
+    width: 450px;
+    margin: 100px auto;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.modal{
+    position: fixed;
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    margin: 20px auto;
+    margin-top: 90px;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+#small-input{
+    background-color: white;
+    border-color: lightgray;
+    border-top-color: lightgray;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+#big-input{
+    background-color: white;
+    border-color: lightgray;
+    border-top-color: lightgray;
+    border-radius: 6px;
+    width: 100%;
+    height: 150px;
+    margin: 10px 0px;
+}
+
+/* Botones primarios */
+button[class = "primary_button"]{
+     background-color: darkblue;
+     width: 100%;
+     height: 40px;
+     color: white;
+     border-radius: 6px;
+     cursor: pointer;
+     border-color: darkblue;
+    border-top-color: darkblue;
+    margin: 20px 0px;
+}
+
+/* Botones secundarios */
+button[class = secondary_button]{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    color: darkblue;
+    border-radius: 6px;
+    cursor: pointer;
+    border-color: darkblue;
+    border-top-color: darkblue;
+}
+
+/* Botones close */
+button[class = close_button]{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    color: darkblue;
+    border-radius: 6px;
+    cursor: pointer;
+    border-color: darkblue;
+    border-top-color: darkblue;
+}
+
+/* Input de password */
+input[type = password]{
+    background-color: white;
+    border-color: lightgray;
+    border-top-color: lightgray;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+/* Input de username */
+input[type = username]{
+    background-color: white;
+    border-color: lightgray;
+    border-top-color: lightgray;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+/* Descripciones y label de tipo text */
+label[type = text]{
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* configuración del topbar cuando se activa el sidebar */
+#topbar.active{
+    background: rgb(68, 157, 216);
+    left: 200px;
+    top: 0;
+}
+
+/* Condiguración del topbar cuando el sidebar está desactivado */
+#topbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: rgb(68, 157, 216);
+    z-index: 1;
+    top: 0;
+}
+
+/* Configuración del título de la página en el topbar */
+#topbar h1{
+    color:rgb(255, 255, 255);
+    line-height: 2.5;
+    margin-left: 90px;
+}
+
+
+/* Configuración del sidebar cuando está activado */
+#sidebar.active{
+    left: 0;
+    top: 0;
+}
+
+/* Configuración del sidebar cuando está desactivado */
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(68, 157, 216);
+    left: -200px;
+    z-index: 1;
+}
+
+/* Condiguración de los módulos del sidebar */
+#sidebar ul li{
+    color:rgba(230, 230, 230, 9);
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 1.3);
+    cursor: pointer;
+}
+
+/* Configuración del logo de la empresa */
+.logo{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Icono menú */
+#topbar .toggle_btn{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    cursor: pointer
+}
+
+/* Icono menú */
+#topbar .toggle_btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+/* Icono "agregar" */
+#topbar .new_game{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer
+}
+/* Icono "agregar" */
+#topbar .new_game span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+
+/* Contenedor de games */
+.game_container{
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+
+.game_container img{
+    position:relative;
+    width: 200px;
+    height: 300px;
+    text-align: left;
+}
+
+
+.game_container h2{
+    font-size: 15px;
+}
+
+
+.parent {
+  margin: 1px;
+  margin-top: 80px;
+  padding: 1px 1px;
+}
+
+.child {
+  display: inline-block;
+  padding: 1px 1px;
+  position:relative;
+}
+
+.sub-parent {
+    margin: 1px;
+    padding: 1px 1px;
+  }
+.sub-child-image {
+    display: inline-block;
+    padding: 1px 1px;
+  }
+
+.sub-child-text {
+    max-height: 280px;
+    width: 230px;
+    display: inline-block;
+    margin: 5px;
+    padding: 1px 1px;
+    position: absolute;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+.sub-child-text a{
+    text-align: justify;
+  }
+.sub-child-text h2{
+    text-align: center;
+  }
